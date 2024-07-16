@@ -1,0 +1,72 @@
+.product-list {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: white;
+  position: relative;
+}
+
+.product-list::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("./noddle.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(5px);
+  z-index: -1;
+}
+.header {
+  padding: 8px;
+  text-align: right;
+  font-family: cursive;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border: 2px solid black;
+}
+.header h1 {
+  margin-right: auto;
+  padding-right: 10px;
+}
+.header img {
+  margin-left: 10px;
+}
+.header button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: none;
+  background-color: #1c1d1f;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.footer {
+  text-align: center;
+  font-size: 22px;
+  color: white;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+  font-weight: bold;
+}

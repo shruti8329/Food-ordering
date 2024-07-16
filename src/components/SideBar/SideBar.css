@@ -1,0 +1,32 @@
+.sidebar {
+  width: 200px;
+  padding: 10px;
+}
+
+.sidebar button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: #0b0b0b;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  font-family: Courier;
+  font-size: 18px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  padding: 10px;
+  background-color: #000000;
+  color: #fff;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 1px;
+  font-family: Courier;
+  font-size: 18px;
+}

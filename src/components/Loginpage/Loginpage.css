@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Arial", sans-serif;
+}
+
+.signin-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: slideIn 1s ease-in-out;
+}
+
+.signin-form {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(245, 241, 241, 0.2);
+  width: 350px;
+  border: 2px solid white;
+  text-align: center;
+  animation: slideIn 1s ease-in-out;
+  z-index: 5;
+  background-color: transparent;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+
+.signin-form h2 {
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 35px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+.signin-form label {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.forgot-password {
+  display: block;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: right;
+  color: #f4f6f8;
+  text-decoration: none;
+  font-family: "Times New Roman";
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.signin-button {
+  width: 100%;
+  padding: 12px;
+  font-family: "Times New Roman", Times, serif;
+  background-color: #656871;
+  color: rgb(244, 237, 237);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  font-size: 20px;
+  animation: pulse 3s infinite;
+}
+
+.signin-button:hover {
+  background-color: #0a0909;
+}
+
+.message {
+  margin-top: 15px;
+  font-size: 16px;
+  /* animation: fadeIn 0.5s ease-in-out; */
+}
+
+.message.success {
+  color: green;
+}
+
+.message.error {
+  color: red;
+}
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
